@@ -29,7 +29,7 @@ const Home = () => {
                         <div className="relative">
                             <h2 className="text-4xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
                                 <span className="block italic font-light text-primary-400 text-2xl md:text-3xl mb-4">Empowering</span>
-                                GTBIT INNOVATORS
+                                GTBIT RESEARCH CENTRE
                             </h2>
                             <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
                                 Curiosity, creativity, and technical excellence brought to life by the Guru Tegh Bahadur Innovation & Research Club.
