@@ -8,8 +8,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-1">
                         <Link to="/" className="flex items-center gap-2 mb-4 group">
-                            <div className="p-2 bg-primary-600 rounded-lg group-hover:bg-primary-500 transition-colors">
-                                <Landmark className="w-5 h-5 text-white" />
+                            <div className="w-10 h-10 bg-white rounded-lg overflow-hidden flex items-center justify-center p-1 group-hover:scale-105 transition-transform">
+                                <img src="/logo.png" alt="GTBIRC Logo" className="w-full h-full object-contain" />
                             </div>
                             <span className="text-xl font-bold tracking-tight text-white uppercase">GTBIRC</span>
                         </Link>
