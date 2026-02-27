@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { Mail, Linkedin, Twitter } from 'lucide-react';
 
-const Excomm = () => {
+const Mentor = () => {
     const leader = {
-        name: 'Dr. Sahil',
+        name: 'Dr. Dipali virmani',
         role: 'Head, Innovation & Research Centre',
         image: '/head_irc.png',
         title: 'Academic Leader & Researcher in Higher Education',
@@ -37,7 +37,7 @@ const Excomm = () => {
                     animate={{ opacity: 1, y: 0 }}
                     className="text-center mb-16"
                 >
-                    <h1 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">Executive Leadership</h1>
+                    <h1 className="text-4xl md:text-6xl font-black text-white mb-6 uppercase tracking-tighter">Our Mentor</h1>
                     <p className="text-xl text-slate-400 max-w-3xl mx-auto font-light leading-relaxed">
                         Meet the vision behind GTBIRC's research and innovation initiatives.
                     </p>
@@ -96,4 +96,4 @@ const Excomm = () => {
     );
 };
 
-export default Excomm;
+export default Mentor;
