@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto flex items-center justify-between pointer-events-auto">
                 {/* Logo Section */}
                 <Link to="/" className="flex items-center gap-2 group">
-                    <div className="w-10 h-10 bg-white/10 backdrop-blur-xl rounded-xl overflow-hidden flex items-center justify-center p-1 group-hover:scale-105 transition-transform border border-white/20">
+                    <div className="w-16 h-16 overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform">
                         <img src="/logo.png" alt="GTBIRC Logo" className="w-full h-full object-contain" />
                     </div>
                 </Link>
