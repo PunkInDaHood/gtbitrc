@@ -19,6 +19,16 @@ const Home = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
+                        <div className="flex justify-center mb-8">
+                            <motion.div
+                                initial={{ scale: 0.8, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
+                                className="w-32 h-32 md:w-48 md:h-48 bg-white rounded-[2rem] p-4 shadow-2xl shadow-primary-500/20 flex items-center justify-center border border-white/10"
+                            >
+                                <img src="/logo.png" alt="GTBIRC Logo" className="w-full h-full object-contain" />
+                            </motion.div>
+                        </div>
                         <span className="inline-block px-3 py-1 rounded-full bg-primary-600/10 text-primary-400 text-xs font-bold uppercase tracking-widest mb-6 border border-primary-600/20">
                             Welcome to GTBIRC
                         </span>
