@@ -1,53 +1,62 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Zap, Users, Trophy, Instagram } from 'lucide-react';
+import { ArrowRight, Zap, Users, Trophy, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div className="relative overflow-hidden pt-16">
+        <div className="relative overflow-hidden bg-slate-950">
             {/* Hero Section */}
-            <section className="relative min-h-[90vh] flex items-center pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+            <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+                {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900/40 to-slate-900" />
-                    <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-primary-600/20 blur-[120px] rounded-full" />
-                    <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-indigo-600/10 blur-[120px] rounded-full" />
+                    <img
+                        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=2070"
+                        alt="Background"
+                        className="w-full h-full object-cover opacity-30 grayscale"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/40 to-slate-950" />
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto text-center">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <div className="flex justify-center mb-8">
-                            <motion.div
-                                initial={{ scale: 0.8, opacity: 0 }}
-                                animate={{ scale: 1, opacity: 1 }}
-                                transition={{ delay: 0.3, type: "spring", stiffness: 100 }}
-                                className="w-32 h-32 md:w-48 md:h-48 bg-white rounded-[2rem] p-4 shadow-2xl shadow-primary-500/20 flex items-center justify-center border border-white/10"
-                            >
-                                <img src="/logo.png" alt="GTBIRC Logo" className="w-full h-full object-contain" />
-                            </motion.div>
-                        </div>
-                        <span className="inline-block px-3 py-1 rounded-full bg-primary-600/10 text-primary-400 text-xs font-bold uppercase tracking-widest mb-6 border border-primary-600/20">
-                            Welcome to GTBIRC
-                        </span>
-                        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
-                            Your Place in <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-indigo-500">Innovation!</span>
+                        <h1 className="text-7xl md:text-[10rem] font-black text-white/10 uppercase tracking-tighter leading-none mb-4 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 select-none">
+                            FOR
                         </h1>
-                        <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-                            The Guru Tegh Bahadur Innovation & Research Club brings curiosity, creativity, and technical exploration to life. We equip students with practical skills and a community of innovators.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link to="/events" className="px-8 py-4 bg-primary-600 hover:bg-primary-500 text-white rounded-xl font-bold transition-all transform hover:scale-105 flex items-center justify-center gap-2 group shadow-lg shadow-primary-600/25">
-                                See Events
-                                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                            </Link>
-                            <Link to="/about" className="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold transition-all">
-                                Learn More
-                            </Link>
+                        <div className="relative">
+                            <h2 className="text-4xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
+                                <span className="block italic font-light text-primary-400 text-2xl md:text-3xl mb-4">Empowering</span>
+                                GTBIT INNOVATORS
+                            </h2>
+                            <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                                Curiosity, creativity, and technical excellence brought to life by the Guru Tegh Bahadur Innovation & Research Club.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <Link to="/events" className="px-10 py-4 bg-white text-slate-900 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl">
+                                    Browse Events
+                                </Link>
+                                <Link to="/about" className="px-10 py-4 border border-white/20 text-white rounded-full font-bold backdrop-blur-md hover:bg-white/5 transition-all">
+                                    Our Story
+                                </Link>
+                            </div>
                         </div>
                     </motion.div>
+                </div>
+
+                {/* Bottom Social Icons */}
+                <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-6 z-10">
+                    <a href="#" className="p-3 bg-white/5 hover:bg-white/10 rounded-full border border-white/10 text-slate-400 hover:text-white transition-all">
+                        <Instagram className="w-5 h-5" />
+                    </a>
+                    <a href="#" className="p-3 bg-white/5 hover:bg-white/10 rounded-full border border-white/10 text-slate-400 hover:text-white transition-all">
+                        <Linkedin className="w-5 h-5" />
+                    </a>
+                    <a href="#" className="p-3 bg-white/5 hover:bg-white/10 rounded-full border border-white/10 text-slate-400 hover:text-white transition-all">
+                        <Twitter className="w-5 h-5" />
+                    </a>
                 </div>
             </section>
 
