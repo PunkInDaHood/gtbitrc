@@ -38,7 +38,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-white font-bold mb-1">Follow Us</h4>
-                                        <p className="text-slate-400">@gtbirc_official</p>
+                                        <a href="https://www.instagram.com/gtbirc.official?utm_source=qr&igsh=M2t4ZWUyaDR6Z2Nu" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">@gtbirc.official</a>
                                     </div>
                                 </div>
 

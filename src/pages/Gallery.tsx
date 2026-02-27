@@ -44,7 +44,7 @@ const Gallery = () => {
                     <div className="mb-12">
                         <Instagram className="w-12 h-12 text-primary-500 mx-auto mb-4" />
                         <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Follow our Social Journey</h2>
-                        <p className="text-slate-400">@gtbirc_official</p>
+                        <a href="https://www.instagram.com/gtbirc.official?utm_source=qr&igsh=M2t4ZWUyaDR6Z2Nu" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">@gtbirc.official</a>
                     </div>
 
                     <div className="bg-slate-900/60 rounded-3xl p-8 border border-slate-800 min-h-[300px] flex items-center justify-center italic text-slate-600">

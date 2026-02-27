@@ -40,7 +40,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Follow Us</h3>
                         <div className="flex space-x-4">
-                            <a href="#" className="p-2 bg-slate-800 hover:bg-primary-600 rounded-full transition-all duration-300 text-slate-300 hover:text-white">
+                            <a href="https://www.instagram.com/gtbirc.official?utm_source=qr&igsh=M2t4ZWUyaDR6Z2Nu" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 hover:bg-primary-600 rounded-full transition-all duration-300 text-slate-300 hover:text-white">
                                 <Instagram className="w-5 h-5" />
                             </a>
                             <a href="#" className="p-2 bg-slate-800 hover:bg-primary-600 rounded-full transition-all duration-300 text-slate-300 hover:text-white">

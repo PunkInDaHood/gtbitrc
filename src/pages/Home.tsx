@@ -48,7 +48,7 @@ const Home = () => {
 
                 {/* Bottom Social Icons */}
                 <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-6 z-10">
-                    <a href="#" className="p-3 bg-white/5 hover:bg-white/10 rounded-full border border-white/10 text-slate-400 hover:text-white transition-all">
+                    <a href="https://www.instagram.com/gtbirc.official?utm_source=qr&igsh=M2t4ZWUyaDR6Z2Nu" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 hover:bg-white/10 rounded-full border border-white/10 text-slate-400 hover:text-white transition-all">
                         <Instagram className="w-5 h-5" />
                     </a>
                     <a href="#" className="p-3 bg-white/5 hover:bg-white/10 rounded-full border border-white/10 text-slate-400 hover:text-white transition-all">
@@ -148,9 +148,9 @@ const Home = () => {
                             <p className="text-slate-400 mb-8">
                                 Follow our journey on Instagram and stay updated with the latest in student-led innovation, workshops, and success stories.
                             </p>
-                            <a href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-bold text-white hover:opacity-90 transition-opacity">
+                            <a href="https://www.instagram.com/gtbirc.official?utm_source=qr&igsh=M2t4ZWUyaDR6Z2Nu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-bold text-white hover:opacity-90 transition-opacity">
                                 <Instagram className="w-5 h-5" />
-                                Follow on Instagram
+                                Follow @gtbirc.official
                             </a>
                         </div>
 
